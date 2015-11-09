@@ -12,7 +12,7 @@ if [ $# -eq 0 ]; then
 	exit 1;-
 fi
 
-# set required parameters
+# add IA S3 Access/Secret API Keys
 export IA_S3_ACCESS_KEY=""
 export IA_S3_SECRET_KEY=""
 
