@@ -1,9 +1,21 @@
 # EZ-IAS3
-A cross-platform upload script that makes it easy to upload data to the Internet Archive.
+A set of cross-platform Internet Archive upload scripts that makes working with large amounts of items easy.
 
-Most S3 uploaders for the Internet Archive suck big time. They don't have elegant support for multiple files, and others have trouble dealing with rate limits. 
+Some 
 
-This prevents people from uploading as much as they would like to it. We should create a simple, no holds-barred Curl/Bash or Python Requests version that will work on Windows or Linux.
+## Usage (Python)
+
+> Explanation of how to use the Python Scripts.
+
+### Set up Internet Archive Python Library
+
+### Add tags to all items uploaded by a certain person
+
+> **Note:** You can only use this script for your own account.
+
+```
+python ia-multisub-mod.py 'youremailaccount.registeredtoIA@gmail.com' 'subject1;subject2;subject3'
+```
 
 ## Usage (Bash)
 
