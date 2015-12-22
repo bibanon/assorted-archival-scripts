@@ -14,10 +14,10 @@ def append_meta(identifier, add_subject):
 	subject = item.metadata['subject']
 
 	# append new subject to existing subject
-	if subject.endswith(';'):
-		new_subject = subject + add_subject
+	if str(subject).endswith(';'):
+		new_subject = str(subject) + add_subject
 	else:
-		new_subject = subject + ';' + add_subject
+		new_subject = str(subject) + ';' + add_subject
 
 	# upload new metadata
 	r = item.modify_metadata(dict(subject=new_subject))
