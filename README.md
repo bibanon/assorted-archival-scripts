@@ -9,12 +9,31 @@ Some
 
 ### Set up Internet Archive Python Library
 
-### Add tags to all items uploaded by a certain person
+Install the Internet Archive Python library:
+
+```
+pip3 install internetarchive
+ia configure
+```
+
+Enter your Internet Archive account username and password. You will then be registered.
+
+### Append subjects to a single item
+
+Use this script to append subjects to a single item. This adds on top of the existing subjects, rather than deleting them.
+
+```
+python3 ia-subject-mod.py <identifier> 'subject1;subject2;'
+```
+
+### Append tags to all items uploaded by a certain person
 
 > **Note:** You can only use this script for your own account.
 
+Use this script to append some tags (in this case, `subject1;subject2;subject3`) to all items in your account.
+
 ```
-python ia-multisub-mod.py 'youremailaccount.registeredtoIA@gmail.com' 'subject1;subject2;subject3'
+python3 ia-multisub-mod.py 'youremailaccount.registeredtoIA@gmail.com' 'subject1;subject2;subject3;'
 ```
 
 ## Usage (Bash)

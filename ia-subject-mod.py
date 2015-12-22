@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Append more subjects to an existing Internet Archive item.
 # Created by Antonizoon for the Bibliotheca Anonoma Field Research Team.
 

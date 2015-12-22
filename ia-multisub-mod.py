@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # Append more subjects to all Internet Archive items uploaded by the current user.
 # Created by Antonizoon for the Bibliotheca Anonoma Field Research Team.
 
@@ -7,9 +7,6 @@ import sys
 import json
 from internetarchive import get_item
 from internetarchive import search_items
-
-# filename of the account list json
-acct_fname = 'acct_items.json'
 
 def append_meta(identifier, add_subject):
 	# obtain existing metadata for given item
