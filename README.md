@@ -23,7 +23,7 @@ Enter your Internet Archive account username and password. You will then be regi
 Use this script to append subjects to a single item. This adds on top of the existing subjects, rather than deleting them.
 
 ```
-python3 ia-subject-mod.py <identifier> 'subject1;subject2;'
+python3 ia-subject-mod.py <identifier> 'subject1' 'subject2'
 ```
 
 ### Append tags to all items uploaded by a certain person
@@ -33,7 +33,7 @@ python3 ia-subject-mod.py <identifier> 'subject1;subject2;'
 Use this script to append some tags (in this case, `subject1;subject2;subject3`) to all items in your account.
 
 ```
-python3 ia-multisub-mod.py 'youremailaccount.registeredtoIA@gmail.com' 'subject1;subject2;subject3;'
+python3 ia-multisub-mod.py 'youremailaccount.registeredtoIA@gmail.com' 'subject1' 'subject2' 'subject3'
 ```
 
 ## Usage (Bash)
