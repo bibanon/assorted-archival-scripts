@@ -1,7 +1,31 @@
-# EZ-IAS3
-A set of cross-platform Internet Archive upload scripts that makes working with large amounts of items easy.
+Assorted Archival Scripts
+=========================
 
-Some 
+These are a collection of miscellaneous archival and upload scripts used by the Bibliotheca Anonoma.
+
+## liveliness.sh
+
+```
+liveliness.sh : Checks the HTTP status code of all urls in a given url-list.
+
+Usage:
+liveliness.sh url-list.txt 
+
+
+To continue where you left off before, first find the last URL scraped:
+    cat results-2014-01-03.txt | tail
+Then search for the URL given in url-list.txt:
+    grep -n "example.com" url-list.txt
+Then cut a slice of the url-list.txt starting only from that line number.
+    sed '1,/example.com/d' url-list.txt > url-list-slice.txt
+Finally, run the script again on the slice:
+    liveliness.sh url-list-slice.txt
+```
+
+EZ-IAS3
+=======
+
+A set of cross-platform Internet Archive upload scripts for manipulating metadata. For typical upload, you should just use the `ia upload` function of the `internetarchive` python library.
 
 ## Usage (Python)
 
